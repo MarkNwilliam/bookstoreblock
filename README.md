@@ -2,9 +2,11 @@
 
 This is a web application that allows users to turn their ebooks into NFts on the polygon bock chain
 
-its was built using remix for the solidity smart contract of which similat code is in the 
+its was built using remix for the solidity smart contract of which similar code is in the 
 hardhat folder but not the one. React.js for the front end , firebase for some backend operations 
 and recoil for state managment
+
+The smart contract was deployed from remix to polygon mumbai network.
 
 # Details of smart contract
 
