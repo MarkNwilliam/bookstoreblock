@@ -1,3 +1,39 @@
+# Overview
+This is a web application that allows users to turn their ebooks into NFts on the polygon bock chain
+
+its was built using remix for the solidity smart contract of which similat code is in the 
+hardhat folder but not the one. React.js for the front end , firebase for some backend operations 
+and recoil for state managment
+
+# Details of smart contract
+
+The asset is the ebook identified by a 6 bytes string (id), that have a certain number of stocks (quantity) that is willing to sell it at a certain price (price).
+
+# Transaction details (These where not yet done in the front  ut are in the smart contract)
+
+The idea is simple:
+
+A transaction needs to be from source to target (the source buys from the target).
+A buyer will buy a certain quantity of stocks.
+A stock price is the same as the targets price.
+The timestamp is the time of transaction execution or now/ block.timestamp.
+The state can be:
+Pending: when the transaction has been created.
+Validated: when the transaction is valid, this means that the target quantity is credited and the transaction has been executed.
+Rejected: in this case, the desired quantity is not available
+Note: A partial transaction is split on 2 (Completed and Rejected)
+
+Example: Let's say I have 2 assets ("MARK", 1,5) and ("MIRIAM", 1, 7)
+
+I have this transaction coming from MARK to MIRIAM ("MARK", "MIRIAM", 8).
+
+I know that MARK can buy only 4 from MIRIAM, because it has only 7 available stocks.
+
+So the resulting transactions will be 2 assuming there is n previous transactions executed by the system.
+
+Transaction n+1: A validated transaction ("MARK", "MIRIAM", 7, 1, timestamp_of_tn+1, 1)
+Transaction n+2: A rejected transaction ("MARK", "MIRIAM", 1, 1, timestamp_of_tn+2, 0)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +104,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+"# bookstoreblock" 
