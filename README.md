@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Overview
 This is a web application that allows users to turn their ebooks into NFts on the polygon bock chain
 
@@ -34,6 +35,8 @@ So the resulting transactions will be 2 assuming there is n previous transaction
 Transaction n+1: A validated transaction ("MARK", "MIRIAM", 7, 1, timestamp_of_tn+1, 1)
 Transaction n+2: A rejected transaction ("MARK", "MIRIAM", 1, 1, timestamp_of_tn+2, 0)
 
+=======
+>>>>>>> 4d55d6762d2c0f109ed2d504e740880623633d53
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -104,4 +107,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<<<<<<< HEAD
 "# bookstoreblock" 
+=======
+>>>>>>> 4d55d6762d2c0f109ed2d504e740880623633d53
