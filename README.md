@@ -1,5 +1,5 @@
-<<<<<<< HEAD
 # Overview
+
 This is a web application that allows users to turn their ebooks into NFts on the polygon bock chain
 
 its was built using remix for the solidity smart contract of which similat code is in the 
@@ -10,7 +10,7 @@ and recoil for state managment
 
 The asset is the ebook identified by a 6 bytes string (id), that have a certain number of stocks (quantity) that is willing to sell it at a certain price (price).
 
-# Transaction details (These where not yet done in the front  ut are in the smart contract)
+# Transaction details (These where not yet done in the frontend but are in the smart contract)
 
 The idea is simple:
 
@@ -35,8 +35,6 @@ So the resulting transactions will be 2 assuming there is n previous transaction
 Transaction n+1: A validated transaction ("MARK", "MIRIAM", 7, 1, timestamp_of_tn+1, 1)
 Transaction n+2: A rejected transaction ("MARK", "MIRIAM", 1, 1, timestamp_of_tn+2, 0)
 
-=======
->>>>>>> 4d55d6762d2c0f109ed2d504e740880623633d53
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
